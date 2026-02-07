@@ -8,7 +8,8 @@ fn main() {
     basic_variables();
     
     // Example 2: Functions
-    greet_learner("Rust Enthusiast");
+    let message = greet_learner("Rust Enthusiast");
+    println!("  Returned value: {}", message);
     
     // Example 3: Control Flow
     demonstrate_control_flow();
@@ -84,6 +85,6 @@ fn demonstrate_ownership() {
 }
 
 // Helper function demonstrating borrowing
-fn calculate_length(s: &String) -> usize {
+fn calculate_length(s: &str) -> usize {
     s.len()
 }
