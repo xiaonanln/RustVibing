@@ -32,11 +32,17 @@ cargo fmt -- --check     # Check formatting without modifying
 cargo doc --open         # Generate and open documentation
 ```
 
+## User Profile
+
+- **Experienced software engineer** — skip basic programming concepts (variables, loops, functions, etc.)
+- Focus on what's unique to Rust: ownership, borrowing, lifetimes, traits, the type system, pattern matching, enums, error handling
+- Move at a faster pace; no hand-holding needed
+
 ## Teaching Approach
 
 When helping the user learn Rust:
 - Explain **why** Rust does things (e.g., why the borrow checker rejects something), not just how to fix it
-- Introduce concepts incrementally — don't overwhelm with advanced features too early
+- Focus on Rust-specific concepts; skip general programming explanations
 - Use compiler errors as teaching moments; walk through what the error means
 - Write idiomatic Rust from the start (use `Result`/`Option` instead of panicking, prefer iterators over manual loops, etc.)
 - Add inline comments on new concepts the first time they appear in code
