@@ -8,22 +8,22 @@ This is a learn-Rust-by-doing project. The user is learning Rust interactively w
 
 ## Setup
 
-The Rust toolchain is not yet installed. To get started:
-```
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source "$HOME/.cargo/env"
-```
+- Rust toolchain is installed (rustc 1.93.0, edition 2024)
+- Cargo project is initialized
 
-The repo does not yet have a Cargo project. Initialize one with:
+## Project Structure
+
+Each lesson is a standalone binary in `src/bin/`:
 ```
-cargo init
+src/bin/hello_world.rs   # Lesson 1: variables, mutability, println! macro
+src/bin/ownership.rs     # Lesson 2: ownership, borrowing, references
 ```
 
 ## Common Commands
 
 ```bash
+cargo run --bin <name>   # Run a specific lesson (e.g., cargo run --bin ownership)
 cargo build              # Compile the project
-cargo run                # Build and run
 cargo test               # Run all tests
 cargo test test_name     # Run a single test by name
 cargo clippy             # Lint (requires: rustup component add clippy)
